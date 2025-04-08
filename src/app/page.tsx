@@ -1,6 +1,6 @@
 "use client"; // Mark this as a Client Component
 
-import Image from "next/image";
+// import Image from "next/image"; // Remove unused import
 import Projects from '@/components/Projects';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
