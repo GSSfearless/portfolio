@@ -4,58 +4,64 @@ import React from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 
-// 定义项目的数据结构类型
+// Modify Project interface to handle different media types
 interface Project {
   id: number;
   title: string;
   description: string;
-  gifUrl: string; // 指向 public 文件夹下的 GIF 路径
-  techStack: string[]; // 新增：技术栈标签
-  projectUrl?: string; // 可选的项目链接
-  githubUrl?: string; // 可选的 GitHub 链接
-  showDemoButton?: boolean; // 新增：是否显示申请 Demo 按钮
+  media: { // Renamed from gifUrl to media
+    type: 'video' | 'image';
+    src: string; // Path relative to /public
+    alt: string;
+  };
+  techStack: string[];
+  projectUrl?: string;
+  githubUrl?: string;
+  showDemoButton?: boolean;
 }
 
-// 更新后的项目数据 - 调整顺序，新增 YOLO 项目
+// Update project data with new resources and Flow-Chat project
 const projectsData: Project[] = [
   {
-    id: 4, // 新增项目 ID
-    title: '智慧检测 YOLO 视觉项目 (创业项目)',
-    description: '作为联合创始人，主导承接省级检测中心 AI 视觉项目。基于 YOLO 前沿算法，带领 20 人团队攻克复杂场景下的目标检测难题，交付高精度、高效率的智能检测解决方案，实现显著的商业价值。',
-    gifUrl: '/gifs/yolo.gif', // 指向 yolo.gif
+    id: 4,
+    title: '智慧检测 YOLO 视觉项目 (创业实践)',
+    description: '作为联合创始人，主导承接省级检测中心 AI 视觉项目。基于 YOLOv8 等前沿算法，带领 20 人技术团队攻克复杂场景下的目标检测难题，交付高精度、高效率的智能检测解决方案，实现显著的商业价值。',
+    media: { type: 'video', src: '/resources/yolo.mp4', alt: 'YOLO 项目演示视频' },
     techStack: ['计算机视觉', 'YOLOv8', 'Python', 'PyTorch/TensorFlow', '项目管理', '团队领导', '需求分析', '商业落地'],
-    showDemoButton: true, // 显示 Demo 按钮
-    // projectUrl: '...', 
-    // githubUrl: '...' // 商业项目通常不公开源码
+    showDemoButton: true,
+  },
+  {
+    id: 5, // New ID for Flow-Chat
+    title: 'Flow-Chat (流程聊天)',
+    description: '将对话式 AI 与可视化流程图/思维导图相结合。在交互式聊天界面中动态生成、编辑和导出可拖拽的图表，赋能复杂任务规划与知识梳理新范式。',
+    media: { type: 'video', src: '/resources/flow-chat.mp4', alt: 'Flow-Chat 项目演示视频' },
+    techStack: ['Next.js', 'React', 'TypeScript', 'LLM Integration', 'React Flow', 'Tailwind CSS', 'AI Prompt Engineering'], // Adjust tech stack as needed
+    // projectUrl: '...', // Add link if available
+    // showDemoButton: true, // Optionally add demo button
   },
   {
     id: 1,
     title: 'Think Graph',
     description: '深度融合大型语言模型（LLM）能力，构建动态知识图谱。实现自然语言输入到结构化知识网络的智能转换与可视化探索，重新定义信息关联与认知方式。',
-    gifUrl: '/gifs/think-graph.gif',
+    media: { type: 'video', src: '/resources/think-graph.mp4', alt: 'Think Graph 项目演示视频' },
     techStack: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Cytoscape.js', 'OpenAI API', 'Supabase', 'AI Prompt Engineering'],
-    projectUrl: 'https://www.think-graph.com', // 添加链接 (确保协议 https://)
-    // githubUrl: '...'
+    projectUrl: 'https://www.think-graph.com',
   },
   {
     id: 2,
     title: '5min-Interview',
-    description: '五分钟面试官，快速辅助面试App。利用先进的 AI 对话模型模拟真实面试场景，提供即时反馈与评估，助力用户高效提升面试技能。',
-    gifUrl: '/gifs/5minhr.gif', 
+    description: '基于 AI 的沉浸式模拟面试平台。利用先进的 AI 对话模型模拟真实面试场景，提供即时反馈与评估，助力用户高效提升面试技能。',
+    media: { type: 'video', src: '/resources/5minhr.mp4', alt: '5min-Interview 项目演示视频' },
     techStack: ['React Native (Expo)', 'Node.js', 'Express', 'AI Chatbot Integration', 'API Design', 'Prompt Engineering'],
-    showDemoButton: true, // 显示 Demo 按钮
-    // projectUrl: '...', 
-    // githubUrl: '...'
+    showDemoButton: true,
   },
-  // NoobAI 可以根据需要保留或移除，如果项目不多建议保留
   {
     id: 3,
     title: 'NoobAI',
-    description: '2023年，用一个周末的开发出来的乐子chatbot。聚焦于快速将 AI 前沿概念转化为可交互原型，验证创新想法，展现了在 AI 驱动下的敏捷开发与实验能力。',
-    gifUrl: '/gifs/noobai.fun.gif', 
-    techStack: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Vercel', 'AI API Integration'], 
-    projectUrl: 'https://www.noobai.fun', // 添加链接 (确保协议 https://)
-    // githubUrl: '...'
+    description: '探索性 AI 应用项目。聚焦于快速将 AI 前沿概念转化为可交互原型，验证创新想法，展现了在 AI 驱动下的敏捷开发与实验能力。',
+    media: { type: 'image', src: '/resources/noobai.fun.jpg', alt: 'NoobAI 项目截图' }, // Using JPG image
+    techStack: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Vercel', 'AI API Integration'],
+    projectUrl: 'https://www.noobai.fun',
   },
 ];
 
@@ -82,25 +88,37 @@ const Projects: React.FC = () => {
           </p>
         </div>
 
-        <div className="mt-12 grid grid-cols-1 gap-10 md:grid-cols-2 lg:gap-12">
+        <div className="mt-12 grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3 lg:gap-12">
           {projectsData.map((project) => (
             <motion.div
               key={project.id}
-              className="group flex flex-col transform transition-all duration-500 ease-out hover:scale-[1.03]"
+              className="group flex flex-col transform transition-all duration-500 ease-out hover:scale-[1.03] lg:[&:nth-child(4)]:col-start-1 lg:[&:nth-child(5)]:col-start-2"
               variants={cardVariants}
             >
               <div
                 className="flex flex-col flex-grow overflow-hidden rounded-xl bg-white shadow-lg ring-1 ring-gray-900/5 transition-shadow duration-300 ease-in-out group-hover:shadow-2xl"
               >
-                <div className="relative aspect-video overflow-hidden">
-                  <Image
-                    src={project.gifUrl}
-                    alt={`${project.title} 项目演示`}
-                    fill
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                    className="object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
-                    unoptimized
-                  />
+                <div className="relative aspect-video overflow-hidden bg-gray-100">
+                  {project.media.type === 'video' ? (
+                    <video
+                      src={project.media.src}
+                      title={project.media.alt}
+                      className="object-cover w-full h-full transition-transform duration-500 ease-in-out group-hover:scale-105"
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                      preload="metadata"
+                    />
+                  ) : (
+                    <Image
+                      src={project.media.src}
+                      alt={project.media.alt}
+                      fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                      className="object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
+                    />
+                  )}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
                 </div>
                 <div className="p-6 flex flex-col flex-grow">

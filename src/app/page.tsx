@@ -65,7 +65,7 @@ export default function Home() {
           className="max-w-3xl text-gray-700 mb-6 text-base sm:text-lg leading-relaxed"
           variants={heroItemVariants}
         >
-          本科毕业于北京理工大学 (985)，硕士毕业于新加坡国立大学 (NUS)。对利用前沿 AI 技术构建创新应用充满热情，擅长快速将想法转化为原型，并具备从零到一的创业项目经验与团队领导力。
+          99年，本科毕业于北京理工大学 (985)，硕士毕业于新加坡国立大学 (NUS)。对利用前沿 AI 技术构建创新应用充满热情，擅长快速将想法转化为原型，并具备从零到一的创业项目经验与团队领导力。
         </motion.p>
         <motion.p 
           className="max-w-3xl text-base text-indigo-700 font-semibold mt-2"
@@ -155,16 +155,16 @@ export default function Home() {
                         加载中...
                       </div>
                     )}
-                    <div className={`${isSpeechGifLoading ? 'opacity-50' : ''} rounded overflow-hidden transition-opacity duration-300`}>
-                      <Image
-                        src="/gifs/meet.gif"
-                        alt="会议演讲片段"
+                    <div className={`${isSpeechGifLoading ? 'opacity-50' : ''} rounded overflow-hidden transition-opacity duration-300 bg-black`}>
+                      <video
+                        src="/resources/meet.mp4"
+                        title="会议演讲片段"
                         width={500} 
                         height={281}
                         className="w-full h-auto object-cover"
-                        unoptimized
-                        priority={showSpeechGif}
-                        onLoad={() => setIsSpeechGifLoading(false)}
+                        controls
+                        autoPlay
+                        onCanPlay={() => setIsSpeechGifLoading(false)}
                         onError={() => setIsSpeechGifLoading(false)}
                       />
                     </div>
