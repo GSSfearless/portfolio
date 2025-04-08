@@ -25,7 +25,7 @@ const projectsData: Project[] = [
   {
     id: 4,
     title: '智慧检测 YOLO 视觉项目 (创业实践)',
-    description: '作为联合创始人，主导承接省级检测中心 AI 视觉项目。基于 YOLOv8 等前沿算法，带领 20 人技术团队攻克复杂场景下的目标检测难题，交付高精度、高效率的智能检测解决方案，实现显著的商业价值。',
+    description: '作为联合创始人，主导承接省级检测中心 AI 视觉项目。基于 YOLO 前沿算法，带领 20 人团队攻克复杂场景下的目标检测难题，交付高精度、高效率的智能检测解决方案，实现显著的商业价值。',
     media: { type: 'video', src: '/resources/yolo.mp4', alt: 'YOLO 项目演示视频' },
     techStack: ['计算机视觉', 'YOLOv8', 'Python', 'PyTorch/TensorFlow', '项目管理', '团队领导', '需求分析', '商业落地'],
     showDemoButton: true,
@@ -58,7 +58,7 @@ const projectsData: Project[] = [
   {
     id: 3,
     title: 'NoobAI',
-    description: '2023年一个周末开发上线的乐子chatbot。聚焦于快速将 AI 前沿概念转化为可交互原型，验证创新想法，展现了在 AI 驱动下的敏捷开发与实验能力。',
+    description: '2023年的一个周末上线的乐子chatbot。聚焦于快速将 AI 前沿概念转化为可交互原型，验证创新想法，展现了在 AI 驱动下的敏捷开发与实验能力。',
     media: { type: 'image', src: '/resources/noobai.fun.jpg', alt: 'NoobAI 项目截图' }, // Using JPG image
     techStack: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Vercel', 'AI API Integration'],
     projectUrl: 'https://www.noobai.fun',
