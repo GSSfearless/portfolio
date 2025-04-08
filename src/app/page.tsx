@@ -1,6 +1,6 @@
 "use client"; // Mark this as a Client Component
 
-import Image from "next/image"; // Re-add Image import from next/image
+// import Image from "next/image"; // Image is no longer used directly in this file
 import Projects from '@/components/Projects';
 import { motion } from 'framer-motion';
 
