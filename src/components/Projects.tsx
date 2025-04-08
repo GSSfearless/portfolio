@@ -83,7 +83,7 @@ const Projects: React.FC = () => {
         </div>
 
         <div className="mt-12 grid grid-cols-1 gap-10 md:grid-cols-2 lg:gap-12">
-          {projectsData.map((project, index) => (
+          {projectsData.map((project) => (
             <motion.div
               key={project.id}
               className="group flex flex-col transform transition-all duration-500 ease-out hover:scale-[1.03]"
