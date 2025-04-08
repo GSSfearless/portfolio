@@ -1,9 +1,8 @@
 "use client"; // Mark this as a Client Component
 
-// import Image from "next/image"; // Remove unused import
+import Image from "next/image"; // Re-add Image import from next/image
 import Projects from '@/components/Projects';
 import { motion } from 'framer-motion';
-import { useState } from 'react';
 
 // Animation variants for sections (fade in from bottom)
 const sectionVariants = {
@@ -32,9 +31,6 @@ const heroItemVariants = {
 };
 
 export default function Home() {
-  const [showSpeechGif, setShowSpeechGif] = useState(false);
-  const [isSpeechGifLoading, setIsSpeechGifLoading] = useState(false);
-
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-8 sm:p-16 lg:p-24 bg-gray-50 text-gray-800 overflow-x-hidden">
       {/* Hero Section */}
@@ -121,7 +117,7 @@ export default function Home() {
             <a href="https://mp.weixin.qq.com/s/qfet8EiZb-4LvLNAfTovXw" target="_blank" rel="noopener noreferrer" className="text-sm font-medium text-indigo-600 hover:text-indigo-500 transition-colors duration-200">阅读原文 &rarr;</a>
           </div>
 
-          {/* 卡片 3: 大会演讲 - 添加加载状态 */}
+          {/* 卡片 3: 大会演讲 - 直接显示图片 */}
           <div className="group overflow-hidden rounded-xl bg-white shadow-lg ring-1 ring-gray-900/5 transition-shadow duration-300 hover:shadow-xl flex flex-col">
             <div className="p-6 flex-grow flex flex-col">
               <div className="mb-4"><span className="inline-block rounded-full bg-cyan-100 px-3 py-1 text-xs font-semibold text-cyan-800">行业发声</span></div>
@@ -130,57 +126,15 @@ export default function Home() {
                 受邀在人工智能大会（长沙站）作为演讲嘉宾，分享 AI 技术在具体场景的应用落地经验与思考。
               </p>
               
-              <div className="mt-auto">
-                {!showSpeechGif ? (
-                  <button
-                    onClick={() => {
-                      setShowSpeechGif(true);
-                      setIsSpeechGifLoading(true);
-                    }}
-                    className="inline-flex items-center justify-center rounded-md bg-sky-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-sky-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-600 transition-colors duration-200"
-                  >
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5 mr-1.5">
-                      <path fillRule="evenodd" d="M2 10a8 8 0 1116 0 8 8 0 01-16 0zm6.39-2.908a.75.75 0 01.766.027l3.5 2.25a.75.75 0 010 1.262l-3.5 2.25A.75.75 0 018 12.25v-4.5a.75.75 0 01.39-.658z" clipRule="evenodd" />
-                    </svg>
-                    点击观看片段
-                  </button>
-                ) : (
-                  <div className="mt-4 space-y-3">
-                    {isSpeechGifLoading && (
-                      <div className="text-sm text-gray-500 flex items-center justify-center">
-                        <svg className="animate-spin -ml-1 mr-2 h-4 w-4 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                          <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
-                          <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-                        </svg>
-                        加载中...
-                      </div>
-                    )}
-                    <div className={`${isSpeechGifLoading ? 'opacity-50' : ''} rounded overflow-hidden transition-opacity duration-300 bg-black`}>
-                      <video
-                        src="/resources/meet.mp4"
-                        title="会议演讲片段"
-                        width={500} 
-                        height={281}
-                        className="w-full h-auto object-cover"
-                        controls
-                        autoPlay
-                        onCanPlay={() => setIsSpeechGifLoading(false)}
-                        onError={() => setIsSpeechGifLoading(false)}
-                      />
-                    </div>
-                    {!isSpeechGifLoading && (
-                      <button
-                        onClick={() => setShowSpeechGif(false)}
-                        className="inline-flex items-center justify-center rounded-md bg-gray-200 px-3 py-1.5 text-xs font-semibold text-gray-700 shadow-sm hover:bg-gray-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-400 transition-colors duration-200"
-                      >
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4 mr-1">
-                          <path fillRule="evenodd" d="M14.77 12.79a.75.75 0 01-1.06-.02L10 8.832l-3.71 3.938a.75.75 0 11-1.08-1.04l4.25-4.5a.75.75 0 011.08 0l4.25 4.5a.75.75 0 01-.02 1.06z" clipRule="evenodd" />
-                        </svg>
-                        收起
-                      </button>
-                    )}
-                  </div>
-                )}
+              <div className="mt-auto pt-4"> 
+                {/* Ensure this Image is the one from next/image */}
+                <Image 
+                  src="/resources/meet.jpg"
+                  alt="人工智能大会（长沙站）演讲照片"
+                  width={500}
+                  height={281}
+                  className="rounded object-cover w-full h-auto"
+                />
               </div>
             </div>
           </div>
