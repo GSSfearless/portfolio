@@ -98,12 +98,13 @@ const Projects: React.FC = () => {
               <div
                 className="flex flex-col flex-grow overflow-hidden rounded-xl bg-white shadow-lg ring-1 ring-gray-900/5 transition-shadow duration-300 ease-in-out group-hover:shadow-2xl"
               >
+                {/* Media Container (Video with Poster or Image) */}
                 <div className="relative aspect-video overflow-hidden bg-gray-100">
                   {project.media.type === 'video' ? (
                     <video
                       src={project.media.src}
                       title={project.media.alt}
-                      className="object-cover w-full h-full block"
+                      className="object-cover w-full h-full block" 
                       playsInline
                       preload="metadata"
                       controls
@@ -118,7 +119,8 @@ const Projects: React.FC = () => {
                       className="object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
                     />
                   )}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
+                   {/* 暂时移除覆盖层，以排查点击干扰问题 */}
+                   {/* <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div> */}
                 </div>
                 <div className="p-6 flex flex-col flex-grow">
                   <h3 className="text-xl font-bold text-gray-900 mb-2">
