@@ -33,7 +33,7 @@ const projectsData: Project[] = [
   },
   {
     id: 5, // New ID for Flow-Chat
-    title: 'Flow-Chat (流程聊天)',
+    title: 'Flow-Chat',
     description: '将对话式 AI 与可视化流程图/思维导图相结合。在交互式聊天界面中动态生成、编辑和导出可拖拽的图表，赋能复杂任务规划与知识梳理新范式。',
     media: { type: 'video', src: '/resources/flow-chat.mp4', alt: 'Flow-Chat 项目演示视频', poster: '/resources/flow-chat-poster.jpg' },
     techStack: ['Next.js', 'React', 'TypeScript', 'LLM Integration', 'React Flow', 'Tailwind CSS', 'AI Prompt Engineering'],
