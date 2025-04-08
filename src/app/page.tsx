@@ -35,32 +35,33 @@ export default function Home() {
   const [showSpeechGif, setShowSpeechGif] = useState(false);
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-12 sm:p-24 bg-gray-50 text-gray-800 overflow-x-hidden">
+    <main className="flex min-h-screen flex-col items-center justify-between p-8 sm:p-16 lg:p-24 bg-gray-50 text-gray-800 overflow-x-hidden">
       {/* Hero Section */}
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex mb-16">
+      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex mb-12 sm:mb-16">
         {/* Placeholder for potential top bar elements like logo or nav */}
       </div>
 
+      {/* Hero Section - 全局居中 */}
       <motion.div 
-        className="relative flex flex-col place-items-center mb-24 text-center lg:text-left lg:items-start w-full max-w-5xl before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]"
+        className="relative flex flex-col place-items-center mb-16 sm:mb-24 text-center w-full max-w-5xl before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]"
         variants={heroContainerVariants}
         initial="hidden"
         animate="visible"
       >
         <motion.h1 
-          className="text-5xl sm:text-7xl font-extrabold mb-6 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 bg-clip-text text-transparent pb-2"
+          className="text-4xl sm:text-5xl lg:text-7xl font-extrabold mb-6 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 bg-clip-text text-transparent pb-2"
           variants={heroItemVariants}
         >
           甘润泽
         </motion.h1>
         <motion.p 
-          className="text-xl sm:text-2xl text-indigo-700 font-semibold mb-6"
+          className="text-lg sm:text-xl lg:text-2xl text-indigo-700 font-semibold mb-6"
           variants={heroItemVariants}
         >
           AI 应用探索者 / AI 产品构建者 / 创业经历
         </motion.p>
         <motion.p 
-          className="max-w-3xl text-gray-700 mb-6 text-lg leading-relaxed"
+          className="max-w-3xl text-gray-700 mb-6 text-base sm:text-lg leading-relaxed"
           variants={heroItemVariants}
         >
           本科毕业于北京理工大学 (985)，硕士毕业于新加坡国立大学 (NUS)。对利用前沿 AI 技术构建创新应用充满热情，擅长快速将想法转化为原型，并具备从零到一的创业项目经验与团队领导力。
