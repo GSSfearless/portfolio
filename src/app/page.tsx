@@ -61,7 +61,7 @@ export default function Home() {
           className="max-w-3xl text-gray-700 mb-6 text-base sm:text-lg leading-relaxed"
           variants={heroItemVariants}
         >
-          99年，本科毕业于北京理工大学 (985)，硕士毕业于新加坡国立大学 (NUS)。对利用前沿 AI 技术构建创新应用充满热情，擅长快速将想法转化为原型，并具备从零到一的创业项目经验与团队领导力。
+          99年，本科毕业于北京理工大学 (985)，硕士毕业于新加坡国立大学 (NUS)。对利用前沿 AI 技术构建创新应用充满热情，擅长快速将想法转化为原型，并具备从0到1的创业项目经验与团队领导力。
         </motion.p>
         <motion.p 
           className="max-w-3xl text-base text-indigo-700 font-semibold mt-2"
@@ -117,24 +117,30 @@ export default function Home() {
             <a href="https://mp.weixin.qq.com/s/qfet8EiZb-4LvLNAfTovXw" target="_blank" rel="noopener noreferrer" className="text-sm font-medium text-indigo-600 hover:text-indigo-500 transition-colors duration-200">阅读原文 &rarr;</a>
           </div>
 
-          {/* 卡片 3: 大会演讲 - 直接显示图片 */}
+          {/* 卡片 3: 大会演讲 - 使用新闻链接替代图片 */}
           <div className="group overflow-hidden rounded-xl bg-white shadow-lg ring-1 ring-gray-900/5 transition-shadow duration-300 hover:shadow-xl flex flex-col">
             <div className="p-6 flex-grow flex flex-col">
               <div className="mb-4"><span className="inline-block rounded-full bg-cyan-100 px-3 py-1 text-xs font-semibold text-cyan-800">行业发声</span></div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">特邀演讲：AI 应用实践分享</h3>
               <p className="text-sm text-gray-600 mb-4 flex-grow">
-                受邀在人工智能大会（长沙站）作为演讲嘉宾，分享 AI 技术在具体场景的应用落地经验与思考。
+                受邀在2024年人工智能大会（长沙站）作为演讲嘉宾，分享 AI 技术在具体场景的应用落地经验与思考。
               </p>
               
-              <div className="mt-auto pt-4"> 
-                {/* Ensure this Image is the one from next/image */}
-                <Image 
-                  src="/resources/meet.jpg"
-                  alt="人工智能大会（长沙站）演讲照片"
-                  width={500}
-                  height={281}
-                  className="rounded object-cover w-full h-auto"
-                />
+              {/* 移除图片，添加新闻报道链接 */}
+              <div className="mt-auto pt-4"> {/* Use mt-auto to push link to bottom */} 
+                <a 
+                  href="https://moment.rednet.cn/pc/content/646842/74/14224406.html" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="inline-flex items-center text-sm font-medium text-indigo-600 hover:text-indigo-500 transition-colors duration-200"
+                >
+                   {/* Link Icon (optional) */} 
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4 mr-1.5">
+                     <path d="M12.232 4.232a2.5 2.5 0 013.536 3.536l-1.225 1.224a.75.75 0 001.061 1.06l1.224-1.224a4 4 0 00-5.656-5.656l-3 3a4 4 0 00.225 5.865.75.75 0 00.977-1.138 2.5 2.5 0 01-.142-3.665l3-3z" />
+                     <path d="M8.603 17.007a4 4 0 005.656-5.656l-3-3a4 4 0 00-5.865-.225.75.75 0 001.138.977 2.5 2.5 0 013.665.142l3 3a2.5 2.5 0 01-3.536 3.536l-1.225-1.224a.75.75 0 00-1.061-1.06l-1.224 1.224a4 4 0 005.656 5.656z" />
+                   </svg>
+                   查看媒体报道
+                 </a>
               </div>
             </div>
           </div>

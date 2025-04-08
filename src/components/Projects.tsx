@@ -32,7 +32,7 @@ const projectsData: Project[] = [
   },
   {
     id: 5, // New ID for Flow-Chat
-    title: 'Flow-Chat (流程聊天)',
+    title: 'Flow-Chat',
     description: '将对话式 AI 与可视化流程图/思维导图相结合。在交互式聊天界面中动态生成、编辑和导出可拖拽的图表，赋能复杂任务规划与知识梳理新范式。',
     media: { type: 'video', src: '/resources/flow-chat.mp4', alt: 'Flow-Chat 项目演示视频' },
     techStack: ['Next.js', 'React', 'TypeScript', 'LLM Integration', 'React Flow', 'Tailwind CSS', 'AI Prompt Engineering'], // Adjust tech stack as needed
@@ -41,7 +41,7 @@ const projectsData: Project[] = [
   },
   {
     id: 1,
-    title: 'Think Graph',
+    title: '3D graph-Chat',
     description: '深度融合大型语言模型（LLM）能力，构建动态知识图谱。实现自然语言输入到结构化知识网络的智能转换与可视化探索，重新定义信息关联与认知方式。',
     media: { type: 'video', src: '/resources/think-graph.mp4', alt: 'Think Graph 项目演示视频' },
     techStack: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Cytoscape.js', 'OpenAI API', 'Supabase', 'AI Prompt Engineering'],
@@ -49,8 +49,8 @@ const projectsData: Project[] = [
   },
   {
     id: 2,
-    title: '5min-Interview',
-    description: '基于 AI 的沉浸式模拟面试平台。利用先进的 AI 对话模型模拟真实面试场景，提供即时反馈与评估，助力用户高效提升面试技能。',
+    title: '五分钟面试官',
+    description: '快速辅助面试App。利用先进的 AI 对话模型模拟真实面试场景，提供即时反馈与评估，助力用户高效提升面试技能。',
     media: { type: 'video', src: '/resources/5minhr.mp4', alt: '5min-Interview 项目演示视频' },
     techStack: ['React Native (Expo)', 'Node.js', 'Express', 'AI Chatbot Integration', 'API Design', 'Prompt Engineering'],
     showDemoButton: true,
@@ -58,7 +58,7 @@ const projectsData: Project[] = [
   {
     id: 3,
     title: 'NoobAI',
-    description: '探索性 AI 应用项目。聚焦于快速将 AI 前沿概念转化为可交互原型，验证创新想法，展现了在 AI 驱动下的敏捷开发与实验能力。',
+    description: '2023年一个周末开发上线的乐子chatbot。聚焦于快速将 AI 前沿概念转化为可交互原型，验证创新想法，展现了在 AI 驱动下的敏捷开发与实验能力。',
     media: { type: 'image', src: '/resources/noobai.fun.jpg', alt: 'NoobAI 项目截图' }, // Using JPG image
     techStack: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Vercel', 'AI API Integration'],
     projectUrl: 'https://www.noobai.fun',
