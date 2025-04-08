@@ -101,33 +101,35 @@ export default function Home() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-start">
           {/* 卡片 1: 付费文章 */}
-          <div className="group overflow-hidden rounded-xl p-6 bg-white shadow-lg ring-1 ring-gray-900/5 transition-shadow duration-300 hover:shadow-xl">
+          <div className="group overflow-hidden rounded-xl p-6 bg-white shadow-lg ring-1 ring-gray-900/5 transition-shadow duration-300 hover:shadow-xl flex flex-col">
             <div className="mb-4"><span className="inline-block rounded-full bg-emerald-100 px-3 py-1 text-xs font-semibold text-emerald-800">市场认可</span></div>
             <h3 className="text-lg font-semibold text-gray-900 mb-2">商业约稿：AI Agent 深度分析</h3>
             <p className="text-sm text-gray-600 mb-4">撰写的关于 AI Agent 应用的文章获得商业约稿（稿酬 1000 元），展现了在AI Agent 行业的认可度，专业分析与写作能力。</p>
-            <a href="https://mp.weixin.qq.com/s/-ePFe6-HpKem3WOMIyy8FQ?poc_token=HFYD9WejSrWyZI8aOq3ZUzQCsGItRyHLdI33S0av" target="_blank" rel="noopener noreferrer" className="text-sm font-medium text-indigo-600 hover:text-indigo-500 transition-colors duration-200">阅读原文 &rarr;</a>
+            <div className="mt-auto pt-4">
+              <a href="https://mp.weixin.qq.com/s/-ePFe6-HpKem3WOMIyy8FQ?poc_token=HFYD9WejSrWyZI8aOq3ZUzQCsGItRyHLdI33S0av" target="_blank" rel="noopener noreferrer" className="text-sm font-medium text-indigo-600 hover:text-indigo-500 transition-colors duration-200">阅读原文 &rarr;</a>
+            </div>
           </div>
 
           {/* 卡片 2: AI Agent 预言 */}
-          <div className="group overflow-hidden rounded-xl p-6 bg-white shadow-lg ring-1 ring-gray-900/5 transition-shadow duration-300 hover:shadow-xl">
+          <div className="group overflow-hidden rounded-xl p-6 bg-white shadow-lg ring-1 ring-gray-900/5 transition-shadow duration-300 hover:shadow-xl flex flex-col">
              <div className="mb-4"><span className="inline-block rounded-full bg-violet-100 px-3 py-1 text-xs font-semibold text-violet-800">前瞻视野</span></div>
             <h3 className="text-lg font-semibold text-gray-900 mb-2">洞察先机：预见 Agent 发展</h3>
             <p className="text-sm text-gray-600 mb-4">早在 2023 年即撰文分析 AI Agent 的发展潜力与挑战，体现对行业前沿趋势的敏锐洞察力。</p>
              {/* 替换回实际链接 */}
-            <a href="https://mp.weixin.qq.com/s/qfet8EiZb-4LvLNAfTovXw" target="_blank" rel="noopener noreferrer" className="text-sm font-medium text-indigo-600 hover:text-indigo-500 transition-colors duration-200">阅读原文 &rarr;</a>
+            <div className="mt-auto pt-4">
+              <a href="https://mp.weixin.qq.com/s/qfet8EiZb-4LvLNAfTovXw" target="_blank" rel="noopener noreferrer" className="text-sm font-medium text-indigo-600 hover:text-indigo-500 transition-colors duration-200">阅读原文 &rarr;</a>
+            </div>
           </div>
 
           {/* 卡片 3: 大会演讲 - 使用新闻链接替代图片 */}
           <div className="group overflow-hidden rounded-xl bg-white shadow-lg ring-1 ring-gray-900/5 transition-shadow duration-300 hover:shadow-xl flex flex-col">
-            <div className="p-6 flex-grow flex flex-col">
+            <div className="p-6 flex flex-col flex-grow">
               <div className="mb-4"><span className="inline-block rounded-full bg-cyan-100 px-3 py-1 text-xs font-semibold text-cyan-800">行业发声</span></div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">特邀演讲：AI 应用实践分享</h3>
               <p className="text-sm text-gray-600 mb-4 flex-grow">
                 受邀在2024年人工智能大会（长沙站）作为演讲嘉宾，分享 AI 技术在具体场景的应用落地经验与思考。
               </p>
-              
-              {/* 移除图片，添加新闻报道链接 */}
-              <div className="mt-auto pt-4"> {/* Use mt-auto to push link to bottom */} 
+              <div className="mt-auto pt-4">
                 <a 
                   href="https://moment.rednet.cn/pc/content/646842/74/14224406.html" 
                   target="_blank" 
