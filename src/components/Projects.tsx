@@ -25,7 +25,7 @@ interface Project {
 const projectsData: Project[] = [
   {
     id: 4,
-    title: '智慧检测 YOLO 视觉项目',
+    title: '智慧检测 YOLO 视觉项目 (创业经历)',
     description: '作为技术负责人，主导承接省级检测中心 AI 视觉项目。基于 YOLO 前沿算法，带领 20 人团队攻克复杂场景下的目标检测难题，交付高精度、高效率的智能检测解决方案，实现显著的商业价值。',
     media: { type: 'video', src: '/resources/yolo.mp4', alt: 'YOLO 项目演示视频', poster: '/resources/yolo-poster.jpg' },
     techStack: ['计算机视觉', 'YOLO', 'Python', 'PyTorch', '项目管理', '团队领导', 'To B', '商业落地'],
