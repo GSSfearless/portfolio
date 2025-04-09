@@ -52,10 +52,10 @@ export default function Home() {
           甘润泽
         </motion.h1>
         <motion.p 
-          className="text-lg sm:text-xl lg:text-2xl text-indigo-700 font-semibold mb-6"
+          className="text-lg sm:text-xl lg:text-2xl font-semibold mb-6 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 bg-clip-text text-transparent"
           variants={heroItemVariants}
         >
-        AI-Native Builder x Founder 
+        AI-Native Builder x Founder
         </motion.p>
         <motion.p 
           className="max-w-3xl text-gray-700 mb-6 text-base sm:text-lg leading-relaxed"
