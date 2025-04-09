@@ -28,7 +28,7 @@ const projectsData: Project[] = [
     title: '智慧检测 YOLO 视觉项目 (创业经历)',
     description: '作为技术负责人，主导承接省级检测中心 AI 视觉项目。基于 YOLO 前沿算法，带领 20 人团队攻克复杂场景下的目标检测难题，交付高精度、高效率的智能检测解决方案，实现显著的商业价值。',
     media: { type: 'video', src: '/resources/yolo.mp4', alt: 'YOLO 项目演示视频', poster: '/resources/yolo-poster.jpg' },
-    techStack: ['计算机视觉', 'YOLOv8', 'Python', 'PyTorch/TensorFlow', '项目管理', '团队领导', '需求分析', '商业落地'],
+    techStack: ['计算机视觉', 'YOLO', 'Python', 'PyTorch', '项目管理', '团队领导', 'To B', '商业落地'],
     showDemoButton: true,
   },
   {
@@ -36,7 +36,7 @@ const projectsData: Project[] = [
     title: 'Flow-Chat',
     description: '将对话式 AI 与可视化流程图/思维导图相结合。在交互式聊天界面中动态生成、编辑和导出可拖拽的图表，赋能复杂任务规划与知识梳理新范式。',
     media: { type: 'video', src: '/resources/flow-chat.mp4', alt: 'Flow-Chat 项目演示视频', poster: '/resources/flow-chat-poster.jpg' },
-    techStack: ['Next.js', 'React', 'TypeScript', 'LLM Integration', 'React Flow', 'Tailwind CSS', 'AI Prompt Engineering'],
+    techStack: ['Next.js', 'React', 'TypeScript', 'LLM Integration', 'React Flow', 'Tailwind CSS', 'AI Prompt Engineering','To C'],
     showDemoButton: true,
   },
   {
@@ -44,7 +44,7 @@ const projectsData: Project[] = [
     title: '3D graph-Chat',
     description: '深度融合大型语言模型（LLM）能力，构建动态知识图谱。实现自然语言输入到结构化知识网络的智能转换与可视化探索，重新定义信息关联与认知方式。',
     media: { type: 'video', src: '/resources/think-graph.mp4', alt: 'Think Graph 项目演示视频', poster: '/resources/think-graph-poster.jpg' },
-    techStack: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Cytoscape.js', 'OpenAI API', 'Supabase', 'AI Prompt Engineering'],
+    techStack: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Cytoscape.js', 'LLM Integration', 'Supabase', 'AI Prompt Engineering','To C'],
     projectUrl: 'https://www.think-graph.com',
   },
   {
@@ -52,7 +52,7 @@ const projectsData: Project[] = [
     title: '五分钟面试官',
     description: '快速辅助面试App。利用先进的 AI 对话模型模拟真实面试场景，提供即时反馈与评估，助力用户高效提升面试技能。',
     media: { type: 'video', src: '/resources/5minhr.mp4', alt: '5min-Interview 项目演示视频', poster: '/resources/5minhr-poster.jpg' },
-    techStack: ['React Native (Expo)', 'Node.js', 'Express', 'AI Chatbot Integration', 'API Design', 'Prompt Engineering'],
+    techStack: ['React Native (Expo)', 'Node.js', 'Express', 'AI Chatbot Integration', 'API Design', 'Prompt Engineering','To C'],
     showDemoButton: true,
   },
   {
