@@ -100,7 +100,7 @@ export default function Home() {
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-start">
-          {/* 卡片 1: 付费文章 - 使用新图标 */}
+          {/* 卡片 1: 付费文章 - 更新图标 */}
           <div className="group overflow-hidden rounded-xl p-6 bg-white shadow-lg ring-1 ring-gray-900/5 transition-shadow duration-300 hover:shadow-xl flex flex-col">
             <div className="mb-4"><span className="inline-block rounded-full bg-emerald-100 px-3 py-1 text-xs font-semibold text-emerald-800">市场认可</span></div>
             <h3 className="text-lg font-semibold text-gray-900 mb-2">商业约稿：AI Agent 深度分析</h3>
@@ -108,15 +108,16 @@ export default function Home() {
             <div className="mt-auto pt-4 flex items-center justify-between">
               <a href="https://mp.weixin.qq.com/s/-ePFe6-HpKem3WOMIyy8FQ?poc_token=HFYD9WejSrWyZI8aOq3ZUzQCsGItRyHLdI33S0av" target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-sm font-medium text-indigo-600 hover:text-indigo-500 transition-colors duration-200">阅读原文</a>
               <div className="flex items-center text-sm text-gray-500">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4 mr-1 text-gray-400">
-                  <path fillRule="evenodd" d="M1.22 7.22a.75.75 0 011.06 0L6 10.94l3.72-3.72a.75.75 0 111.06 1.06l-4.25 4.25a.75.75 0 01-1.06 0L1.22 8.28a.75.75 0 010-1.06zM16.75 6a.75.75 0 00-1.5 0v5.69l-1.72-1.72a.75.75 0 00-1.06 1.06l3 3a.75.75 0 001.06 0l3-3a.75.75 0 10-1.06-1.06l-1.72 1.72V6z" clipRule="evenodd" />
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5 mr-1 text-gray-400">
+                  <path d="M10 12.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5z" />
+                  <path fillRule="evenodd" d="M.664 10.59a1.651 1.651 0 010-1.18l.877-.58a2.001 2.001 0 012.087-.224l.29.168a.75.75 0 00.947-.931l-.21-.091a.75.75 0 01.947-.076l.03.031a.75.75 0 00.946.075l.199-.09a.75.75 0 01.946.076l.111.09a.75.75 0 00.946.075l.29-.168a2.001 2.001 0 012.087.224l.877.58a1.651 1.651 0 010 1.18l-.877.58a2.001 2.001 0 01-2.087.224l-.29-.168a.75.75 0 00-.946.931l.21.091a.75.75 0 01-.947.076l-.03-.031a.75.75 0 00-.946-.075l-.199.09a.75.75 0 01-.946-.076l-.111-.09a.75.75 0 00-.946-.075l-.29.168a2.001 2.001 0 01-2.087-.224l-.877-.58zM10 5a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0v-1.5A.75.75 0 0110 5z" clipRule="evenodd" />
                 </svg>
                 7.7k
               </div>
             </div>
           </div>
 
-          {/* 卡片 2: AI Agent 预言 - 使用新图标 */}
+          {/* 卡片 2: AI Agent 预言 - 更新图标 */}
           <div className="group overflow-hidden rounded-xl p-6 bg-white shadow-lg ring-1 ring-gray-900/5 transition-shadow duration-300 hover:shadow-xl flex flex-col">
              <div className="mb-4"><span className="inline-block rounded-full bg-violet-100 px-3 py-1 text-xs font-semibold text-violet-800">前瞻视野</span></div>
             <h3 className="text-lg font-semibold text-gray-900 mb-2">洞察先机：预见 Agent 发展</h3>
@@ -124,15 +125,16 @@ export default function Home() {
              <div className="mt-auto pt-4 flex items-center justify-between">
                <a href="https://mp.weixin.qq.com/s/qfet8EiZb-4LvLNAfTovXw" target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-sm font-medium text-indigo-600 hover:text-indigo-500 transition-colors duration-200">阅读原文</a>
                <div className="flex items-center text-sm text-gray-500">
-                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4 mr-1 text-gray-400">
-                     <path fillRule="evenodd" d="M1.22 7.22a.75.75 0 011.06 0L6 10.94l3.72-3.72a.75.75 0 111.06 1.06l-4.25 4.25a.75.75 0 01-1.06 0L1.22 8.28a.75.75 0 010-1.06zM16.75 6a.75.75 0 00-1.5 0v5.69l-1.72-1.72a.75.75 0 00-1.06 1.06l3 3a.75.75 0 001.06 0l3-3a.75.75 0 10-1.06-1.06l-1.72 1.72V6z" clipRule="evenodd" />
+                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5 mr-1 text-gray-400">
+                     <path d="M10 12.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5z" />
+                     <path fillRule="evenodd" d="M.664 10.59a1.651 1.651 0 010-1.18l.877-.58a2.001 2.001 0 012.087-.224l.29.168A.75.75 0 005.6 9.45l.21-.091a.75.75 0 01.947.076l.03.031a.75.75 0 00.946.075l.199-.09a.75.75 0 01.946.076l.111.09a.75.75 0 00.946.075l.29-.168a2.001 2.001 0 012.087.224l.877.58a1.651 1.651 0 010 1.18l-.877.58a2.001 2.001 0 01-2.087.224l-.29-.168a.75.75 0 00-.946.931l-.21.091a.75.75 0 01-.947.076l-.03-.031a.75.75 0 00-.946-.075l-.199.09a.75.75 0 01-.946-.076l-.111-.09a.75.75 0 00-.946-.075l-.29.168a2.001 2.001 0 01-2.087-.224l-.877-.58zM10 5a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0v-1.5A.75.75 0 0110 5z" clipRule="evenodd" />
                   </svg>
                   1.9k
                </div>
              </div>
           </div>
 
-          {/* 卡片 3: 大会演讲 - 修改阅读量并使用新图标 */}
+          {/* 卡片 3: 大会演讲 - 更新图标和阅读量 */}
           <div className="group overflow-hidden rounded-xl bg-white shadow-lg ring-1 ring-gray-900/5 transition-shadow duration-300 hover:shadow-xl flex flex-col">
             <div className="p-6 flex flex-col flex-grow">
               <div className="mb-4"><span className="inline-block rounded-full bg-cyan-100 px-3 py-1 text-xs font-semibold text-cyan-800">行业发声</span></div>
@@ -150,8 +152,9 @@ export default function Home() {
                    查看媒体报道
                  </a>
                   <div className="flex items-center text-sm text-gray-500">
-                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4 mr-1 text-gray-400">
-                        <path fillRule="evenodd" d="M1.22 7.22a.75.75 0 011.06 0L6 10.94l3.72-3.72a.75.75 0 111.06 1.06l-4.25 4.25a.75.75 0 01-1.06 0L1.22 8.28a.75.75 0 010-1.06zM16.75 6a.75.75 0 00-1.5 0v5.69l-1.72-1.72a.75.75 0 00-1.06 1.06l3 3a.75.75 0 001.06 0l3-3a.75.75 0 10-1.06-1.06l-1.72 1.72V6z" clipRule="evenodd" />
+                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5 mr-1 text-gray-400">
+                        <path d="M10 12.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5z" />
+                        <path fillRule="evenodd" d="M.664 10.59a1.651 1.651 0 010-1.18l.877-.58a2.001 2.001 0 012.087-.224l.29.168A.75.75 0 005.6 9.45l.21-.091a.75.75 0 01.947.076l.03.031a.75.75 0 00.946.075l.199-.09a.75.75 0 01.946.076l.111.09a.75.75 0 00.946.075l.29-.168a2.001 2.001 0 012.087.224l.877.58a1.651 1.651 0 010 1.18l-.877.58a2.001 2.001 0 01-2.087.224l-.29-.168a.75.75 0 00-.946.931l.21.091a.75.75 0 01-.947.076l-.03-.031a.75.75 0 00-.946-.075l-.199.09a.75.75 0 01-.946-.076l-.111-.09a.75.75 0 00-.946-.075l-.29.168a2.001 2.001 0 01-2.087-.224l-.877-.58zM10 5a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0v-1.5A.75.75 0 0110 5z" clipRule="evenodd" />
                      </svg>
                     81k
                   </div>
