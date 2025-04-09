@@ -55,7 +55,7 @@ export default function Home() {
           className="text-lg sm:text-xl lg:text-2xl text-indigo-700 font-semibold mb-6"
           variants={heroItemVariants}
         >
-          AI 应用探索者 / AI 产品构建者 / 创业经历
+        AI-Native Builder x Founder x Startup
         </motion.p>
         <motion.p 
           className="max-w-3xl text-gray-700 mb-6 text-base sm:text-lg leading-relaxed"
