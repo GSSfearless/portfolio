@@ -144,7 +144,7 @@ export default function Home() {
                    查看媒体报道
                  </a>
                  <div className="flex items-center text-sm text-red-600 font-medium">
-                    81k
+                    82k
                  </div>
                </div>
             </div>
