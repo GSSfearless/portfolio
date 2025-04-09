@@ -132,7 +132,7 @@ export default function Home() {
               <div className="mb-4"><span className="inline-block rounded-full bg-cyan-100 px-3 py-1 text-xs font-semibold text-cyan-800">行业发声</span></div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">特邀演讲：AI 应用实践分享</h3>
               <p className="text-sm text-gray-600 mb-4 flex-grow">
-                受邀在2024年人工智能大会（长沙站）作为演讲嘉宾，分享 AI 技术在具体场景的应用落地经验与思考。
+                受邀在2024长沙人工智能产业生态大会作为演讲嘉宾，分享 AI 技术在具体场景的应用落地经验与思考。
               </p>
               <div className="mt-auto pt-4 flex items-center justify-between">
                  <a 
