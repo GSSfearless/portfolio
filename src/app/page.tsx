@@ -68,8 +68,8 @@ export default function Home() {
             rel="noopener noreferrer" 
             className="font-bold text-indigo-700 hover:text-indigo-500 transition-colors duration-200"
           >
-            北京理工大学
-          </a>（985），硕士毕业于
+            北京理工大学（985）
+          </a>，硕士毕业于
           <a 
             href="https://nus.edu.sg/" 
             target="_blank" 
