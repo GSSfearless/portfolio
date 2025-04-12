@@ -61,7 +61,23 @@ export default function Home() {
           className="max-w-3xl text-gray-700 mb-6 text-base sm:text-lg leading-relaxed"
           variants={heroItemVariants}
         >
-          99年，本科毕业于北京理工大学 (985)，硕士毕业于新加坡国立大学 (NUS)。对利用前沿 AI 技术构建创新应用充满热情，擅长快速将想法转化为原型，并具备从0到1的创业项目经验与团队领导力。
+          99年，本科毕业于
+          <a 
+            href="https://www.bit.edu.cn/" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="font-bold text-indigo-700 hover:text-indigo-500 transition-colors duration-200"
+          >
+            北京理工大学
+          </a> (985)，硕士毕业于
+          <a 
+            href="https://nus.edu.sg/" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="font-bold text-indigo-700 hover:text-indigo-500 transition-colors duration-200"
+          >
+            新加坡国立大学 (NUS)
+          </a>。对利用前沿 AI 技术构建创新应用充满热情，擅长快速将想法转化为原型，并具备从0到1的创业项目经验与团队领导力。
         </motion.p>
         <motion.p 
           className="max-w-3xl text-base text-indigo-700 font-semibold mt-2"
