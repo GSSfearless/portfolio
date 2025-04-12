@@ -76,7 +76,7 @@ export default function Home() {
             rel="noopener noreferrer" 
             className="font-bold text-indigo-700 hover:text-indigo-500 transition-colors duration-200"
           >
-            新加坡国立大学 (NUS)
+            新加坡国立大学 (QS Top 10)
           </a>。对利用前沿 AI 技术构建创新应用充满热情，擅长快速将想法转化为原型，并具备从0到1的创业项目经验与团队领导力。
         </motion.p>
         <motion.p 
