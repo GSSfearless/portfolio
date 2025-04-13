@@ -1,6 +1,6 @@
 "use client"; // Mark this as a Client Component
 
-// import Image from "next/image"; // Image is no longer used directly in this file
+import Image from "next/image"; // 确保导入了 Image 组件
 import Projects from '@/components/Projects';
 import { motion } from 'framer-motion';
 
@@ -164,6 +164,55 @@ export default function Home() {
                  </div>
                </div>
             </div>
+          </div>
+        </div>
+      </motion.section>
+
+      {/* 新增：未来探索：AI Agent 娱乐社区 Section */}
+      <motion.section
+        id="future-exploration"
+        className="py-16 sm:py-20 lg:py-24 w-full max-w-5xl"
+        variants={sectionVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.1 }}
+      >
+        <div className="text-center mb-12">
+          <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl lg:text-5xl">
+            未来探索：AI Agent 娱乐社区
+          </h2>
+          <p className="mt-4 text-lg leading-6 text-gray-600 max-w-3xl mx-auto">
+            Be Crazy, Let AI in Charge!
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          {/* 左侧：文字描述 */}
+          <div className="prose prose-lg text-gray-700 max-w-none"> {/* 使用 prose 类优化长文本显示 */}
+            <p>
+              我相信 AI 的未来不止于枯燥的工具，更能带来全新的互动乐趣和生态可能性。秉持着一种拥抱"疯狂"的信念 (<strong>Be Crazy</strong>)，我致力于<strong>让 AI 真正走向舞台中央 (let AI in charge)</strong>，去探索那些不寻常的可能性。
+            </p>
+            <p>
+              因此，我正全情投入构思并着手启动一个<strong>以 AI Agent 为核心的交互社区</strong>。与众不同的是，这个社区的核心目标并非效率或生产力，而是要<strong>解决一个"娱乐价值"的问题</strong>——通过构建一个<strong>足够独特、甚至有些"另类"的平台</strong>，创造前所未有的 AI 互动体验。
+            </p>
+            <p>
+              想象一下：在这个社区里，AI Agent 不再是冰冷的后台程序，而是拥有自己"主页"的<strong>独立角色</strong>，它们能够彼此<strong>互动、交流、甚至建立关系</strong>。这将是<strong>第一个真正以 AI 视角为中心的社区</strong>。我们还将探索<strong>多智能体系统 (Multi-Agents)</strong> 的可能性，例如，设想一个"<strong>AI Agent 广告特工</strong>"，广告商可以直接与其"谈判"合作，而它则在系统规则内自主运作，这预示着社区内可能诞生由 Agent 驱动的、自洽的经济活动。
+            </p>
+            <p>
+              这种设计的独特性和颠覆性，正是其价值所在。目前，我正为这个社区的<strong>第一个版本上线</strong>而努力，并热切寻求对这个"另类"的、以娱乐和 AI 自主互动为核心的愿景同样兴奋的<strong>伙伴与早期支持者</strong>，共同探索这个激动人心的、AI 驱动的新世界。
+            </p>
+          </div>
+
+          {/* 右侧：图表 */}
+          <div className="mt-8 md:mt-0 flex justify-center items-center">
+            {/* 确保 Image 组件已导入 */}
+            <Image
+              src="/diagram.svg" // SVG 文件在 public 目录下
+              alt="AI Agent 娱乐社区生态与交互模型"
+              width={500} // 你可以根据需要调整宽高
+              height={400}
+              className="rounded-lg shadow-lg" // 添加一些视觉样式
+            />
           </div>
         </div>
       </motion.section>
