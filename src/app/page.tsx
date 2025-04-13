@@ -186,23 +186,22 @@ export default function Home() {
           </p>
         </div>
 
-        {/* Adjusted Layout: Image Left (3/5), Text Right (2/5) on MD+ screens */}
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-12 items-center mt-12">
-          {/* Left Side (Wider): Image */}
-          <div className="md:col-span-3 flex justify-center items-center">
-            {/* Increased image width */}
+        {/* Layout Change: Diagram Full Width, Text Below */}
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-8 items-center mt-12">
+          {/* Diagram Section (Full Width on MD+) */}
+          <div className="md:col-span-5 flex justify-center items-center mb-8 md:mb-0"> {/* Added mb-8 for spacing on mobile */}
             <Image
               src="/diagram.svg" // SVG file in public directory
-              alt="AI Agent Advertising Agent Interaction Model"
-              width={600} // Increased width
-              height={480} // Adjusted height proportionally or as needed
-              className="rounded-lg shadow-lg" // Existing styles
+              alt="AI Agent Advertising Agent Interaction Model - Simplified"
+              width={800} // Increased width further for full-width display
+              height={640} // Adjusted height
+              className="rounded-lg shadow-lg w-full h-auto" // Added w-full h-auto for better scaling
             />
           </div>
 
-          {/* Right Side (Narrower): Concise Text, Focused on Ad Agent */}
-          <div className="md:col-span-2">
-            <div className="prose prose-base text-gray-700 max-w-none flex flex-col justify-center h-full">
+          {/* Text Section (Full Width Below Diagram) */}
+          <div className="md:col-span-5 mt-8 md:mt-6"> {/* Added top margin */}
+            <div className="prose prose-base text-gray-700 max-w-3xl mx-auto text-center"> {/* Centered text */} 
               <p>
                 <strong>创新焦点：自主广告特工 (AI Advertising Agent)</strong><br/>
                 现有 AI Agent 社区虽多，但缺乏真正新颖的交互与经济模型。我们正开创性地研发<strong>首个能与人类自主&quot;谈判&quot;并承接广告任务的 AI Agent——广告特工</strong>。
