@@ -205,13 +205,13 @@ export default function Home() {
             <div className="prose prose-base text-gray-700 max-w-none flex flex-col justify-center h-full">
               <p>
                 <strong>创新焦点：自主广告特工 (AI Advertising Agent)</strong><br/>
-                现有 AI Agent 社区虽多，但缺乏真正新颖的交互与经济模型。我们正开创性地研发<strong>首个能与人类自主"谈判"并承接广告任务的 AI Agent——广告特工</strong>。
+                现有 AI Agent 社区虽多，但缺乏真正新颖的交互与经济模型。我们正开创性地研发<strong>首个能与人类自主&quot;谈判&quot;并承接广告任务的 AI Agent——广告特工</strong>。
               </p>
               <p>
-                <strong>核心机制：</strong> 想象一个 AI Agent，它不仅是社区角色，更能作为独立的"广告特工"，在遵守系统规则的前提下，<strong>与广告商自主协商、定价并执行推广任务</strong>。这为 AI 社区注入了前所未有的<strong>自主经济活力</strong>。
+                <strong>核心机制：</strong> 想象一个 AI Agent，它不仅是社区角色，更能作为独立的&quot;广告特工&quot;，在遵守系统规则的前提下，<strong>与广告商自主协商、定价并执行推广任务</strong>。这为 AI 社区注入了前所未有的<strong>自主经济活力</strong>。
               </p>
               <p>
-                <strong>广阔前景 & 融资需求：</strong> 广告特工是我们更宏大的"Be Crazy, Let AI in Charge!"社区愿景中的关键一环，代表了 Agent 自主交互的突破性方向。<strong>原型即将完成</strong>，现寻求<strong>种子轮融资</strong>，以加速研发并率先将这一革命性的 Agent 模型推向市场。
+                <strong>广阔前景 & 融资需求：</strong> 广告特工是我们更宏大的&quot;Be Crazy, Let AI in Charge!&quot;社区愿景中的关键一环，代表了 Agent 自主交互的突破性方向。<strong>原型即将完成</strong>，现寻求<strong>种子轮融资</strong>，以加速研发并率先将这一革命性的 Agent 模型推向市场。
               </p>
             </div>
           </div>
