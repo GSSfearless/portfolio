@@ -179,40 +179,41 @@ export default function Home() {
       >
         <div className="text-center mb-12">
           <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl lg:text-5xl">
-            未来探索：AI Agent 娱乐社区
+            创新焦点：自主谈判的 AI 广告特工
           </h2>
           <p className="mt-4 text-lg leading-6 text-gray-600 max-w-3xl mx-auto">
-            Be Crazy, Let AI in Charge!
+            开创 Agent 自主经济交互新模式
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          {/* 左侧：文字描述 */}
-          <div className="prose prose-lg text-gray-700 max-w-none"> {/* 使用 prose 类优化长文本显示 */}
-            <p>
-              我相信 AI 的未来不止于枯燥的工具，更能带来全新的互动乐趣和生态可能性。秉持着一种拥抱&quot;疯狂&quot;的信念 (<strong>Be Crazy</strong>)，我致力于<strong>让 AI 真正走向舞台中央 (let AI in charge)</strong>，去探索那些不寻常的可能性。
-            </p>
-            <p>
-              因此，我正全情投入构思并着手启动一个<strong>以 AI Agent 为核心的交互社区</strong>。与众不同的是，这个社区的核心目标并非效率或生产力，而是要<strong>解决一个&quot;娱乐价值&quot;的问题</strong>——通过构建一个<strong>足够独特、甚至有些&quot;另类&quot;的平台</strong>，创造前所未有的 AI 互动体验。
-            </p>
-            <p>
-              想象一下：在这个社区里，AI Agent 不再是冰冷的后台程序，而是拥有自己&quot;主页&quot;的<strong>独立角色</strong>，它们能够彼此&quot;互动、交流、甚至建立关系&quot;。这将是<strong>第一个真正以 AI 视角为中心的社区</strong>。我们还将探索<strong>多智能体系统 (Multi-Agents)</strong> 的可能性，例如，设想一个&quot;<strong>AI Agent 广告特工</strong>&quot;，广告商可以直接与其&quot;谈判&quot;合作，而它则在系统规则内自主运作，这预示着社区内可能诞生由 Agent 驱动的、自洽的经济活动。
-            </p>
-            <p>
-              这种设计的独特性和颠覆性，正是其价值所在。目前，我正为这个社区的<strong>第一个版本上线</strong>而努力，并热切寻求对这个&quot;另类&quot;的、以娱乐和 AI 自主互动为核心的愿景同样兴奋的<strong>伙伴与早期支持者</strong>，共同探索这个激动人心的、AI 驱动的新世界。
-            </p>
+        {/* Adjusted Layout: Image Left (3/5), Text Right (2/5) on MD+ screens */}
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-12 items-center mt-12">
+          {/* Left Side (Wider): Image */}
+          <div className="md:col-span-3 flex justify-center items-center">
+            {/* Increased image width */}
+            <Image
+              src="/diagram.svg" // SVG file in public directory
+              alt="AI Agent Advertising Agent Interaction Model"
+              width={600} // Increased width
+              height={480} // Adjusted height proportionally or as needed
+              className="rounded-lg shadow-lg" // Existing styles
+            />
           </div>
 
-          {/* 右侧：图表 */}
-          <div className="mt-8 md:mt-0 flex justify-center items-center">
-            {/* 确保 Image 组件已导入 */}
-            <Image
-              src="/diagram.svg" // SVG 文件在 public 目录下
-              alt="AI Agent 娱乐社区生态与交互模型"
-              width={500} // 你可以根据需要调整宽高
-              height={400}
-              className="rounded-lg shadow-lg" // 添加一些视觉样式
-            />
+          {/* Right Side (Narrower): Concise Text, Focused on Ad Agent */}
+          <div className="md:col-span-2">
+            <div className="prose prose-base text-gray-700 max-w-none flex flex-col justify-center h-full">
+              <p>
+                <strong>创新焦点：自主广告特工 (AI Advertising Agent)</strong><br/>
+                现有 AI Agent 社区虽多，但缺乏真正新颖的交互与经济模型。我们正开创性地研发<strong>首个能与人类自主"谈判"并承接广告任务的 AI Agent——广告特工</strong>。
+              </p>
+              <p>
+                <strong>核心机制：</strong> 想象一个 AI Agent，它不仅是社区角色，更能作为独立的"广告特工"，在遵守系统规则的前提下，<strong>与广告商自主协商、定价并执行推广任务</strong>。这为 AI 社区注入了前所未有的<strong>自主经济活力</strong>。
+              </p>
+              <p>
+                <strong>广阔前景 & 融资需求：</strong> 广告特工是我们更宏大的"Be Crazy, Let AI in Charge!"社区愿景中的关键一环，代表了 Agent 自主交互的突破性方向。<strong>原型即将完成</strong>，现寻求<strong>种子轮融资</strong>，以加速研发并率先将这一革命性的 Agent 模型推向市场。
+              </p>
+            </div>
           </div>
         </div>
       </motion.section>
