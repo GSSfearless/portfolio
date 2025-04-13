@@ -190,16 +190,16 @@ export default function Home() {
           {/* 左侧：文字描述 */}
           <div className="prose prose-lg text-gray-700 max-w-none"> {/* 使用 prose 类优化长文本显示 */}
             <p>
-              我相信 AI 的未来不止于枯燥的工具，更能带来全新的互动乐趣和生态可能性。秉持着一种拥抱"疯狂"的信念 (<strong>Be Crazy</strong>)，我致力于<strong>让 AI 真正走向舞台中央 (let AI in charge)</strong>，去探索那些不寻常的可能性。
+              我相信 AI 的未来不止于枯燥的工具，更能带来全新的互动乐趣和生态可能性。秉持着一种拥抱&quot;疯狂&quot;的信念 (<strong>Be Crazy</strong>)，我致力于<strong>让 AI 真正走向舞台中央 (let AI in charge)</strong>，去探索那些不寻常的可能性。
             </p>
             <p>
-              因此，我正全情投入构思并着手启动一个<strong>以 AI Agent 为核心的交互社区</strong>。与众不同的是，这个社区的核心目标并非效率或生产力，而是要<strong>解决一个"娱乐价值"的问题</strong>——通过构建一个<strong>足够独特、甚至有些"另类"的平台</strong>，创造前所未有的 AI 互动体验。
+              因此，我正全情投入构思并着手启动一个<strong>以 AI Agent 为核心的交互社区</strong>。与众不同的是，这个社区的核心目标并非效率或生产力，而是要<strong>解决一个&quot;娱乐价值&quot;的问题</strong>——通过构建一个<strong>足够独特、甚至有些&quot;另类&quot;的平台</strong>，创造前所未有的 AI 互动体验。
             </p>
             <p>
-              想象一下：在这个社区里，AI Agent 不再是冰冷的后台程序，而是拥有自己"主页"的<strong>独立角色</strong>，它们能够彼此<strong>互动、交流、甚至建立关系</strong>。这将是<strong>第一个真正以 AI 视角为中心的社区</strong>。我们还将探索<strong>多智能体系统 (Multi-Agents)</strong> 的可能性，例如，设想一个"<strong>AI Agent 广告特工</strong>"，广告商可以直接与其"谈判"合作，而它则在系统规则内自主运作，这预示着社区内可能诞生由 Agent 驱动的、自洽的经济活动。
+              想象一下：在这个社区里，AI Agent 不再是冰冷的后台程序，而是拥有自己&quot;主页&quot;的<strong>独立角色</strong>，它们能够彼此&quot;互动、交流、甚至建立关系&quot;。这将是<strong>第一个真正以 AI 视角为中心的社区</strong>。我们还将探索<strong>多智能体系统 (Multi-Agents)</strong> 的可能性，例如，设想一个&quot;<strong>AI Agent 广告特工</strong>&quot;，广告商可以直接与其&quot;谈判&quot;合作，而它则在系统规则内自主运作，这预示着社区内可能诞生由 Agent 驱动的、自洽的经济活动。
             </p>
             <p>
-              这种设计的独特性和颠覆性，正是其价值所在。目前，我正为这个社区的<strong>第一个版本上线</strong>而努力，并热切寻求对这个"另类"的、以娱乐和 AI 自主互动为核心的愿景同样兴奋的<strong>伙伴与早期支持者</strong>，共同探索这个激动人心的、AI 驱动的新世界。
+              这种设计的独特性和颠覆性，正是其价值所在。目前，我正为这个社区的<strong>第一个版本上线</strong>而努力，并热切寻求对这个&quot;另类&quot;的、以娱乐和 AI 自主互动为核心的愿景同样兴奋的<strong>伙伴与早期支持者</strong>，共同探索这个激动人心的、AI 驱动的新世界。
             </p>
           </div>
 
