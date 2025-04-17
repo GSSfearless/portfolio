@@ -179,10 +179,10 @@ export default function Home() {
       >
         <div className="text-center mb-12">
           <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl lg:text-5xl">
-            创新焦点：自主谈判的 AI 广告特工
+            AutoAdAgent: 自主 AI 广告交互的未来
           </h2>
           <p className="mt-4 text-lg leading-6 text-gray-600 max-w-3xl mx-auto">
-            开创 Agent 自主经济交互新模式
+            首个自主谈判 AI 广告特工平台 - 寻求天使轮融资
           </p>
         </div>
 
@@ -192,25 +192,24 @@ export default function Home() {
           <div className="md:col-span-5 flex justify-center items-center mb-8 md:mb-0"> {/* Added mb-8 for spacing on mobile */}
             <Image
               src="/diagram.svg" // SVG file in public directory
-              alt="AI Agent Advertising Agent Interaction Model - Simplified"
+              alt="AutoAdAgent - Autonomous AI Advertising Agent Interaction Model"
               width={800} // Increased width further for full-width display
               height={640} // Adjusted height
               className="rounded-lg shadow-lg w-full h-auto" // Added w-full h-auto for better scaling
             />
           </div>
 
-          {/* Text Section (Full Width Below Diagram) */}
+          {/* Text Section (Full Width Below Diagram) - Investor Focused */}
           <div className="md:col-span-5 mt-8 md:mt-6"> {/* Added top margin */}
             <div className="prose prose-base text-gray-700 max-w-3xl mx-auto text-center"> {/* Centered text */} 
               <p>
-                <strong>创新焦点：自主广告特工 (AI Advertising Agent)</strong><br/>
-                现有 AI Agent 社区虽多，但缺乏真正新颖的交互与经济模型。我们正开创性地研发<strong>首个能与人类自主&quot;谈判&quot;并承接广告任务的 AI Agent——广告特工</strong>。
+                <strong>解决痛点 & 巨大机遇：</strong> 当前数字广告依赖人工撮合与固定规则，效率低下且缺乏智能。我们正利用生成式 AI 颠覆这一模式，通过 <strong>AutoAdAgent</strong> 平台，释放千亿级广告市场的巨大潜力。
               </p>
               <p>
-                <strong>核心机制：</strong> 想象一个 AI Agent，它不仅是社区角色，更能作为独立的&quot;广告特工&quot;，在遵守系统规则的前提下，<strong>与广告商自主协商、定价并执行推广任务</strong>。这为 AI 社区注入了前所未有的<strong>自主经济活力</strong>。
+                <strong>核心创新：自主谈判广告特工：</strong> 我们首创的 AI 广告特工，不仅能在社区环境中执行任务，更具备<strong>与广告商进行自主&quot;谈判&quot;、动态定价并优化投放策略</strong>的独特能力。这是迈向真正 Agent 自主经济的关键一步。
               </p>
               <p>
-                <strong>广阔前景 & 融资需求：</strong> 广告特工是我们更宏大的&quot;Be Crazy, Let AI in Charge!&quot;社区愿景中的关键一环，代表了 Agent 自主交互的突破性方向。<strong>原型即将完成</strong>，现寻求<strong>种子轮融资</strong>，以加速研发并率先将这一革命性的 Agent 模型推向市场。
+                <strong>寻求天使轮融资：</strong> AutoAdAgent 不仅仅是一个概念，我们的<strong>核心原型即将完成</strong>。现寻求<strong>天使轮融资</strong>，以加速产品研发、团队建设，并率先抢占 AI 自主广告交互这一蓝海市场。我们相信，这不仅是技术创新，更是商业模式的革命。
               </p>
             </div>
           </div>
